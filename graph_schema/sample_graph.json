@@ -1,0 +1,146 @@
+{
+  "description": "Sample graph data for testing falkor-irac without real judgment PDFs.",
+  "cases": [
+    {
+      "citation": "(2012) 9 SCC 1",
+      "name": "Sanjay Chandra v. CBI",
+      "court": "Supreme Court",
+      "year": 2012,
+      "bench_size": 2,
+      "bench_type": "division",
+      "matter_type": "bail",
+      "summary": "Laid down three considerations for bail in economic offences: gravity of charge, likelihood of fleeing justice, and likelihood of tampering with evidence."
+    },
+    {
+      "citation": "AIR 2014 SC 2756",
+      "name": "Arnesh Kumar v. State of Bihar",
+      "court": "Supreme Court",
+      "year": 2014,
+      "bench_size": 2,
+      "bench_type": "division",
+      "matter_type": "bail",
+      "summary": "Directions on arrest in offences punishable with imprisonment up to seven years. Police must apply mind before arrest; Magistrate must be satisfied before authorising detention."
+    },
+    {
+      "citation": "(2004) 7 SCC 528",
+      "name": "Kalyan Chandra Sarkar v. Rajesh Ranjan",
+      "court": "Supreme Court",
+      "year": 2004,
+      "bench_size": 2,
+      "bench_type": "division",
+      "matter_type": "bail",
+      "summary": "A bail application after rejection by a court of coordinate jurisdiction requires fresh grounds or changed circumstances."
+    },
+    {
+      "citation": "(1978) 1 SCC 248",
+      "name": "Maneka Gandhi v. Union of India",
+      "court": "Supreme Court",
+      "year": 1978,
+      "bench_size": 7,
+      "bench_type": "constitutional",
+      "matter_type": "constitutional",
+      "summary": "Article 21 right to life includes right to live with dignity. Procedure established by law must be fair, just, and reasonable."
+    }
+  ],
+  "statutes": [
+    {
+      "name": "Code of Criminal Procedure, 1973",
+      "short_name": "CrPC",
+      "year": 1973,
+      "repealed": false
+    },
+    {
+      "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "short_name": "BNSS",
+      "year": 2023,
+      "repealed": false,
+      "note": "Replaces CrPC from 1 July 2024"
+    },
+    {
+      "name": "Indian Penal Code, 1860",
+      "short_name": "IPC",
+      "year": 1860,
+      "repealed": true,
+      "repealed_year": 2023,
+      "replaced_by": "Bharatiya Nyaya Sanhita, 2023"
+    }
+  ],
+  "sections": [
+    {
+      "number": "437",
+      "title": "When bail may be taken in case of non-bailable offence",
+      "statute": "Code of Criminal Procedure, 1973",
+      "repealed": false
+    },
+    {
+      "number": "439",
+      "title": "Special powers of High Court or Court of Session regarding bail",
+      "statute": "Code of Criminal Procedure, 1973",
+      "repealed": false
+    },
+    {
+      "number": "41",
+      "title": "When police may arrest without warrant",
+      "statute": "Code of Criminal Procedure, 1973",
+      "repealed": false
+    }
+  ],
+  "issues": [
+    {
+      "case_citation": "(2012) 9 SCC 1",
+      "text": "What are the relevant considerations for grant of bail in economic offences?",
+      "issue_type": "procedural"
+    },
+    {
+      "case_citation": "AIR 2014 SC 2756",
+      "text": "Whether arrest is mandatory in offences punishable with imprisonment up to seven years?",
+      "issue_type": "procedural"
+    },
+    {
+      "case_citation": "(2004) 7 SCC 528",
+      "text": "Whether a subsequent bail application is maintainable after rejection by a coordinate bench?",
+      "issue_type": "procedural"
+    }
+  ],
+  "precedent_relationships": [
+    {
+      "source": "AIR 2014 SC 2756",
+      "target": "(2012) 9 SCC 1",
+      "relationship": "CITES",
+      "proposition": "Bail considerations: gravity of charge, flight risk, evidence tampering"
+    },
+    {
+      "source": "(2004) 7 SCC 528",
+      "target": "(2012) 9 SCC 1",
+      "relationship": "CITES",
+      "proposition": "Bail in economic offences"
+    }
+  ],
+  "statute_citations": [
+    {
+      "case_citation": "(2012) 9 SCC 1",
+      "statute_name": "Code of Criminal Procedure, 1973",
+      "section_number": "437",
+      "purpose": "relied_upon"
+    },
+    {
+      "case_citation": "AIR 2014 SC 2756",
+      "statute_name": "Code of Criminal Procedure, 1973",
+      "section_number": "41",
+      "purpose": "relied_upon"
+    }
+  ],
+  "procedural_sequences": [
+    {
+      "case_citation": "(2012) 9 SCC 1",
+      "events": [
+        "FIR_FILED",
+        "CHARGE_SHEET_SUBMITTED",
+        "BAIL_APPLICATION_FILED",
+        "BAIL_DENIED",
+        "APPEAL_FILED",
+        "BAIL_GRANTED"
+      ]
+    }
+  ]
+}
