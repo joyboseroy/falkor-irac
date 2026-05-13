@@ -1,0 +1,32 @@
+# Core graph database
+falkordb>=0.5.0
+
+# PDF processing
+pymupdf>=1.24.0
+pdfminer.six>=20221105
+
+# Ollama client (no API key required)
+requests>=2.31.0
+
+# Data processing
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+rich>=13.7.0
+
+# Evaluation
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+
+# Legal text processing
+spacy>=3.7.0
+# en_core_web_sm: python -m spacy download en_core_web_sm
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Notebooks
+jupyter>=1.0.0
+ipykernel>=6.29.0
