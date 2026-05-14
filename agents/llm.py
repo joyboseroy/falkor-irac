@@ -23,17 +23,18 @@ load_dotenv()
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "tinyllama")
 
-# TinyLlama has a 2048 token context window.
-# Keep prompts short and responses minimal.
-MAX_PROMPT_CHARS = 1500
-NUM_PREDICT = 512
+# Model-aware settings
+_IS_SMALL = any(m in OLLAMA_MODEL.lower() for m in ["tinyllama", "phi", "1b", "2b"])
+MAX_PROMPT_CHARS = 1500 if _IS_SMALL else 6000
+NUM_PREDICT = 256 if _IS_SMALL else 400
+NUM_CTX = 2048 if _IS_SMALL else 4096
+TIMEOUT = 180 if _IS_SMALL else 600
 
 
 def call_ollama(prompt: str, system: str = "") -> str:
     """Call Ollama and return raw text response."""
     url = f"{OLLAMA_HOST}/api/generate"
 
-    # Truncate prompt hard if needed to fit context
     combined = f"{system}\n\n{prompt}" if system else prompt
     if len(combined) > MAX_PROMPT_CHARS:
         combined = combined[:MAX_PROMPT_CHARS]
@@ -45,12 +46,12 @@ def call_ollama(prompt: str, system: str = "") -> str:
         "options": {
             "temperature": 0.0,
             "num_predict": NUM_PREDICT,
-            "num_ctx": 2048,
+            "num_ctx": NUM_CTX,
         }
     }
 
     try:
-        response = requests.post(url, json=payload, timeout=180)
+        response = requests.post(url, json=payload, timeout=TIMEOUT)
         response.raise_for_status()
     except requests.exceptions.ConnectionError:
         raise RuntimeError(
