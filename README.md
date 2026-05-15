@@ -254,6 +254,16 @@ Standard BLEU/ROUGE scores are insufficient for legal reasoning. This repo evalu
 
 ---
 
+## Related Projects
+
+- [NyayaSaar-LoRA](https://github.com/joyboseroy/NyayaSaar-LoRA)  
+  PEFT/QLoRA-based simplification of structured Indian legal reasoning into plain English.
+
+- [inIRAC Dataset](https://huggingface.co/datasets/joyboseroy/inIRAC)  
+  Structured Indian legal reasoning dataset in IRAC format.
+
+---
+
 ## Citation
 
 If you use this work, please cite:
