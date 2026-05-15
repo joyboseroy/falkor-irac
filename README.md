@@ -136,10 +136,10 @@ The system **never silently prefers one path**. Doctrinal conflict is a first-cl
 
 | Dataset | Use |
 |---|---|
-| [ILDC] | Supreme Court judgments (ACL 2021) |
-| [NyayaAnumana] | Largest Indian legal judgment prediction dataset |
+| ILDC | Supreme Court judgments (ACL 2021) |
+| NyayaAnumana | Largest Indian legal judgment prediction dataset |
 | [MILPaC](https://github.com/Law-AI/MILPaC) | Multilingual Indian legal parallel corpus (9 Indic languages) |
-| [IndicLegalQA] | Legal QA in Indian judicial context (2025) |
+| IndicLegalQA | Legal QA in Indian judicial context (2025) |
 | Indian Bail Orders Dataset | 20+ structured attributes per case — bail, IPC sections, judgment reason |
 
 ---
