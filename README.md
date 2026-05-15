@@ -5,7 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![FalkorDB](https://img.shields.io/badge/graph-FalkorDB-orange.svg)](https://www.falkordb.com/)
-[![arXiv](https://img.shields.io/badge/arXiv-coming_soon-red.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2605.14665-red.svg)](https://arxiv.org/abs/2605.14665)
+[![Dataset](https://img.shields.io/badge/HuggingFace-inIRAC-yellow.svg)](https://huggingface.co/datasets/joyboseroy/inIRAC)
 
 > *"Courts are effectively graph traversal engines disguised as prose."*
 
@@ -24,6 +25,9 @@ The system is built around three ideas:
 3. **Conflict-Aware Reasoning** — The system detects doctrinal conflicts (coordinate bench disagreements, per incuriam citations, distinguished precedents) as a first-class output rather than silently preferring one path.
 
 This is **not** a legal chatbot. It is a **reasoning substrate** — reusable infrastructure that can later power compliance AI, telecom regulation analysis, patent drafting, and any domain requiring verifiable multi-step justification.
+
+**arXiv paper:** https://arxiv.org/abs/2605.14665  
+**Dataset:** https://huggingface.co/datasets/joyboseroy/inIRAC
 
 ---
 
